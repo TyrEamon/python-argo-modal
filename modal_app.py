@@ -68,9 +68,9 @@ async def lifespan(app_instance: FastAPI):
     # --- 应用启动时 ---
     print("▶️ Lifespan startup: 正在启动后台服务...")
     
-    UUID = os.environ.get('UUID') or 'be16536e-5c3c-44bc-8cb7-b7d0ddc3d951'
-    ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN') or ''
-    ARGO_AUTH = os.environ.get('ARGO_AUTH') or ''
+    UUID = os.environ.get('UUID') or '70c4ed51-322d-4506-9dad-4f09dcc73cc5'
+    ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN') or 'modal01.tyr01.dpdns.org'
+    ARGO_AUTH = os.environ.get('ARGO_AUTH') or 'eyJhIjoiNGFiMzk2NDM5YzhmYjNlMjRmZDk5NjAzN2VmY2JjYjYiLCJ0IjoiYTMyZGZiMTUtY2ViNC00ZGE3LWIyOWUtY2NkZDNiMDZlMWFkIiwicyI6IlpHUXhORFppTkdVdE9EQTNNQzAwTmpBd0xUZzVNelF0T0RFM1pXTTROekF3T0RFeCJ9'
     ARGO_PORT = int(os.environ.get('ARGO_PORT') or '8001')
     NAME = os.environ.get('NAME') or 'Modal'
     CFIP = os.environ.get('CFIP') or 'www.visa.com.tw'
@@ -80,8 +80,8 @@ async def lifespan(app_instance: FastAPI):
     NEZHA_KEY = os.environ.get('NEZHA_KEY') or ''
     UPLOAD_URL = os.environ.get('UPLOAD_URL') or ''
     SUB_PATH = os.environ.get('SUB_PATH') or 'sub'
-    BOT_TOKEN = os.environ.get('BOT_TOKEN') or ''
-    CHAT_ID = os.environ.get('CHAT_ID') or ''
+    BOT_TOKEN = os.environ.get('BOT_TOKEN') or '7976519333:AAFXWKSVsGUqN0mZqOHVWdJv8mipRn0hqc4'
+    CHAT_ID = os.environ.get('CHAT_ID') or '8040798522'
     
     # 启动后台进程
     config_json_path = "/root/.tmp/config.json"
